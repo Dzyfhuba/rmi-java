@@ -23,12 +23,6 @@ public class Server
         
     }
 
-    @Override
-    public int program(int k1, int k2)
-            throws RemoteException {
-        return k1 * k2;
-    }
-
     public static void main(String[] args)
             throws RemoteException {
         Server s = new Server();
@@ -57,15 +51,5 @@ public class Server
         System.out.println(Arrays.toString(value));
 
         return queue;
-    }
-
-    @Override
-    public void ticket_post(String ticket) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void email_post(String ticket) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
